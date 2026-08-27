@@ -1,0 +1,69 @@
+/* Custom styles for PyeBoat (minimal — most styling via Tailwind) */
+
+:root{
+  --accent: #10B981; /* emerald-500 */
+}
+
+/* Slight overlay on hero for better text contrast when Tailwind backdrop isn't available */
+header > div { background: rgba(0,0,0,0.25); }
+
+/* Make input and button fonts inherit the site font */
+input, button, textarea { font-family: inherit; }
+
+/* Small helper for image object position */
+.object-top { object-position: top; }
+
+/* Visual polish */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #0f172a;
+}
+
+/* Smooth anchor navigation */
+html { scroll-behavior: smooth; }
+
+header {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+header::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.28), rgba(0,0,0,0.44));
+  pointer-events: none;
+}
+
+/* Card lift effect used on category cards */
+.card{
+  transition: transform 220ms cubic-bezier(.2,.8,.2,1), box-shadow 220ms;
+  will-change: transform;
+}
+.card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(2,6,23,0.08);
+}
+
+/* Subtle styling for section headings */
+h2, h3{
+  color: #064e3b;
+}
+h2::after{
+  content: "";
+  display: block;
+  width: 56px;
+  height: 3px;
+  background: var(--accent);
+  margin-top: 8px;
+  border-radius: 4px;
+}
+
+/* Footer tweaks */
+footer a{ color: #374151; }
+footer a:hover{ color: var(--accent); }
+
+/* Ensure hero content sits above pseudo-overlay */
+header > .backdrop-brightness-75, header .max-w-7xl{ position: relative; z-index: 2; }
