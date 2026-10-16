@@ -6,22 +6,23 @@
   <title>PyeBoatNoodle Thai Restaurant</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans" style="font-family: 'Poppins', sans-serif;">
+<body class="bg-gray-50 text-gray-800 font-sans">
   <!-- Navbar -->
   <nav class="bg-white shadow-md">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between h-16 items-center">
         <div class="flex items-center">
           <a href="#" class="text-2xl font-bold text-emerald-600">PyeBoatNoodle</a>
-          <span class="ml-3 text-sm text-gray-500">& Hawker Thai food</span>
+          <span class="ml-3 text-sm text-gray-500">& Thai Hawker food</span>
         </div>
         <div class="hidden md:flex space-x-4 items-center">
           <a href="#menu" class="text-gray-700 hover:text-emerald-600">Menu</a>
+          <a href="#the-bowl" class="text-gray-700 hover:text-emerald-600">The Bowl</a>
           <a href="#about" class="text-gray-700 hover:text-emerald-600">About</a>
           <a href="#contact" class="text-gray-700 hover:text-emerald-600">Contact</a>
           <a href="https://ordering.chownow.com/order/3563/locations" target="_blank" rel="noopener" class="flex items-center gap-2 bg-white border border-gray-200 text-gray-700 px-3 py-2 rounded-md hover:shadow">
@@ -50,6 +51,7 @@
     </div>
     <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
       <a href="#menu" class="block py-2 text-gray-700">Menu</a>
+      <a href="#the-bowl" class="block py-2 text-gray-700">The Bowl</a>
       <a href="#about" class="block py-2 text-gray-700">About</a>
       <a href="#contact" class="block py-2 text-gray-700">Contact</a>
       <a href="https://ordering.chownow.com/order/3563/locations" target="_blank" rel="noopener" class="block py-2 text-gray-700">Order on ChowNow</a>
@@ -58,7 +60,7 @@
   </nav>
 
   <!-- Hero -->
-  <header class="relative bg-cover bg-center min-h-[520px]" style="background-image: url('public/img1.png');">
+  <header class="relative bg-cover bg-center min-h-[720px]" style="background-image: url('public/aboutus.jpg');">
     <div class="backdrop-brightness-75 bg-black/30">
       <div class="max-w-7xl mx-auto py-32 sm:py-40 lg:py-48 px-4 sm:px-6 lg:px-8 text-center">
         <h1 class="text-4xl sm:text-5xl font-extrabold text-white drop-shadow">PyeBoatNoodle Restaurant</h1>
@@ -90,7 +92,7 @@
   <section id="our-story" data-aos="fade-up" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
       <div>
-        <img src="public/aboutus.jpg" alt="Pyeboat Noodle Astoria" class="w-full rounded-lg shadow-md object-cover h-64 md:h-96">
+        <img src="public/img1.png" alt="Pyeboat Noodle Astoria" class="w-full rounded-lg shadow-md object-cover h-64 md:h-96">
       </div>
       <div>
         <h2 class="text-2xl font-bold">Our Story</h2>
@@ -695,8 +697,9 @@
 </p>
         <p class="mt-2 text-gray-700">Phone: (718) 685-2329<br>Email: pyeboatnoodle@gmail.com</p>
         <p class="mt-4 text-gray-700"><strong>Hours</strong><br>
-         Fri – Wed : 11:30 AM – 10:30 PM <br/>
-         Thursday : Closed
+         Sun – Thu : 11:30 AM – 10:00 PM <br/>
+         Fri : 11:30 AM – 11:00 PM <br/>
+         Sat : 11:30 AM – 10:30 PM
         </p>
       </div>
       <div class="bg-white p-6 rounded-lg shadow-sm text-center">
@@ -761,6 +764,7 @@
     navToggle.addEventListener('click', () => {
       mobileMenu.classList.toggle('hidden');
     });
+
   </script>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
